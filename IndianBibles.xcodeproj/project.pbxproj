@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B973FEE2634279700B8B740 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B973FED2634279700B8B740 /* AppDelegate.swift */; };
+		3B973FF02634279700B8B740 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B973FEF2634279700B8B740 /* SceneDelegate.swift */; };
+		3B973FF22634279700B8B740 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B973FF12634279700B8B740 /* ViewController.swift */; };
+		3B973FF52634279700B8B740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B973FF32634279700B8B740 /* Main.storyboard */; };
+		3B973FF72634279900B8B740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B973FF62634279900B8B740 /* Assets.xcassets */; };
+		3B973FFA2634279900B8B740 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B973FF82634279900B8B740 /* LaunchScreen.storyboard */; };
+		3B9740052634279A00B8B740 /* IndianBiblesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9740042634279A00B8B740 /* IndianBiblesTests.swift */; };
+		3B9740102634279A00B8B740 /* IndianBiblesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97400F2634279A00B8B740 /* IndianBiblesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B9740012634279A00B8B740 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B973FE22634279700B8B740 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B973FE92634279700B8B740;
+			remoteInfo = IndianBibles;
+		};
+		3B97400C2634279A00B8B740 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B973FE22634279700B8B740 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B973FE92634279700B8B740;
+			remoteInfo = IndianBibles;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B973FEA2634279700B8B740 /* IndianBibles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndianBibles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B973FED2634279700B8B740 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B973FEF2634279700B8B740 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3B973FF12634279700B8B740 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B973FF42634279700B8B740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B973FF62634279900B8B740 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B973FF92634279900B8B740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B973FFB2634279900B8B740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B9740002634279A00B8B740 /* IndianBiblesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndianBiblesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B9740042634279A00B8B740 /* IndianBiblesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndianBiblesTests.swift; sourceTree = "<group>"; };
+		3B9740062634279A00B8B740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B97400B2634279A00B8B740 /* IndianBiblesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndianBiblesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B97400F2634279A00B8B740 /* IndianBiblesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndianBiblesUITests.swift; sourceTree = "<group>"; };
+		3B9740112634279A00B8B740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B973FE72634279700B8B740 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B973FFD2634279A00B8B740 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B9740082634279A00B8B740 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B973FE12634279700B8B740 = {
+			isa = PBXGroup;
+			children = (
+				3B973FEC2634279700B8B740 /* IndianBibles */,
+				3B9740032634279A00B8B740 /* IndianBiblesTests */,
+				3B97400E2634279A00B8B740 /* IndianBiblesUITests */,
+				3B973FEB2634279700B8B740 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B973FEB2634279700B8B740 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B973FEA2634279700B8B740 /* IndianBibles.app */,
+				3B9740002634279A00B8B740 /* IndianBiblesTests.xctest */,
+				3B97400B2634279A00B8B740 /* IndianBiblesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B973FEC2634279700B8B740 /* IndianBibles */ = {
+			isa = PBXGroup;
+			children = (
+				3B973FED2634279700B8B740 /* AppDelegate.swift */,
+				3B973FEF2634279700B8B740 /* SceneDelegate.swift */,
+				3B973FF12634279700B8B740 /* ViewController.swift */,
+				3B973FF32634279700B8B740 /* Main.storyboard */,
+				3B973FF62634279900B8B740 /* Assets.xcassets */,
+				3B973FF82634279900B8B740 /* LaunchScreen.storyboard */,
+				3B973FFB2634279900B8B740 /* Info.plist */,
+			);
+			path = IndianBibles;
+			sourceTree = "<group>";
+		};
+		3B9740032634279A00B8B740 /* IndianBiblesTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B9740042634279A00B8B740 /* IndianBiblesTests.swift */,
+				3B9740062634279A00B8B740 /* Info.plist */,
+			);
+			path = IndianBiblesTests;
+			sourceTree = "<group>";
+		};
+		3B97400E2634279A00B8B740 /* IndianBiblesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B97400F2634279A00B8B740 /* IndianBiblesUITests.swift */,
+				3B9740112634279A00B8B740 /* Info.plist */,
+			);
+			path = IndianBiblesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B973FE92634279700B8B740 /* IndianBibles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B9740142634279A00B8B740 /* Build configuration list for PBXNativeTarget "IndianBibles" */;
+			buildPhases = (
+				3B973FE62634279700B8B740 /* Sources */,
+				3B973FE72634279700B8B740 /* Frameworks */,
+				3B973FE82634279700B8B740 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IndianBibles;
+			productName = IndianBibles;
+			productReference = 3B973FEA2634279700B8B740 /* IndianBibles.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B973FFF2634279A00B8B740 /* IndianBiblesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B9740172634279A00B8B740 /* Build configuration list for PBXNativeTarget "IndianBiblesTests" */;
+			buildPhases = (
+				3B973FFC2634279A00B8B740 /* Sources */,
+				3B973FFD2634279A00B8B740 /* Frameworks */,
+				3B973FFE2634279A00B8B740 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B9740022634279A00B8B740 /* PBXTargetDependency */,
+			);
+			name = IndianBiblesTests;
+			productName = IndianBiblesTests;
+			productReference = 3B9740002634279A00B8B740 /* IndianBiblesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B97400A2634279A00B8B740 /* IndianBiblesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B97401A2634279A00B8B740 /* Build configuration list for PBXNativeTarget "IndianBiblesUITests" */;
+			buildPhases = (
+				3B9740072634279A00B8B740 /* Sources */,
+				3B9740082634279A00B8B740 /* Frameworks */,
+				3B9740092634279A00B8B740 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B97400D2634279A00B8B740 /* PBXTargetDependency */,
+			);
+			name = IndianBiblesUITests;
+			productName = IndianBiblesUITests;
+			productReference = 3B97400B2634279A00B8B740 /* IndianBiblesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B973FE22634279700B8B740 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Rajeev Kalangi";
+				TargetAttributes = {
+					3B973FE92634279700B8B740 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					3B973FFF2634279A00B8B740 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 3B973FE92634279700B8B740;
+					};
+					3B97400A2634279A00B8B740 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 3B973FE92634279700B8B740;
+					};
+				};
+			};
+			buildConfigurationList = 3B973FE52634279700B8B740 /* Build configuration list for PBXProject "IndianBibles" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B973FE12634279700B8B740;
+			productRefGroup = 3B973FEB2634279700B8B740 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B973FE92634279700B8B740 /* IndianBibles */,
+				3B973FFF2634279A00B8B740 /* IndianBiblesTests */,
+				3B97400A2634279A00B8B740 /* IndianBiblesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B973FE82634279700B8B740 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B973FFA2634279900B8B740 /* LaunchScreen.storyboard in Resources */,
+				3B973FF72634279900B8B740 /* Assets.xcassets in Resources */,
+				3B973FF52634279700B8B740 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B973FFE2634279A00B8B740 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B9740092634279A00B8B740 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B973FE62634279700B8B740 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B973FF22634279700B8B740 /* ViewController.swift in Sources */,
+				3B973FEE2634279700B8B740 /* AppDelegate.swift in Sources */,
+				3B973FF02634279700B8B740 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B973FFC2634279A00B8B740 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B9740052634279A00B8B740 /* IndianBiblesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B9740072634279A00B8B740 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B9740102634279A00B8B740 /* IndianBiblesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B9740022634279A00B8B740 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B973FE92634279700B8B740 /* IndianBibles */;
+			targetProxy = 3B9740012634279A00B8B740 /* PBXContainerItemProxy */;
+		};
+		3B97400D2634279A00B8B740 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B973FE92634279700B8B740 /* IndianBibles */;
+			targetProxy = 3B97400C2634279A00B8B740 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B973FF32634279700B8B740 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B973FF42634279700B8B740 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B973FF82634279900B8B740 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B973FF92634279900B8B740 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B9740122634279A00B8B740 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B9740132634279A00B8B740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B9740152634279A00B8B740 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IndianBibles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kalangirajeev.IndianBibles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B9740162634279A00B8B740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IndianBibles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kalangirajeev.IndianBibles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3B9740182634279A00B8B740 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IndianBiblesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kalangirajeev.IndianBiblesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IndianBibles.app/IndianBibles";
+			};
+			name = Debug;
+		};
+		3B9740192634279A00B8B740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IndianBiblesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kalangirajeev.IndianBiblesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IndianBibles.app/IndianBibles";
+			};
+			name = Release;
+		};
+		3B97401B2634279A00B8B740 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IndianBiblesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kalangirajeev.IndianBiblesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IndianBibles;
+			};
+			name = Debug;
+		};
+		3B97401C2634279A00B8B740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IndianBiblesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kalangirajeev.IndianBiblesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IndianBibles;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B973FE52634279700B8B740 /* Build configuration list for PBXProject "IndianBibles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B9740122634279A00B8B740 /* Debug */,
+				3B9740132634279A00B8B740 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B9740142634279A00B8B740 /* Build configuration list for PBXNativeTarget "IndianBibles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B9740152634279A00B8B740 /* Debug */,
+				3B9740162634279A00B8B740 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B9740172634279A00B8B740 /* Build configuration list for PBXNativeTarget "IndianBiblesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B9740182634279A00B8B740 /* Debug */,
+				3B9740192634279A00B8B740 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B97401A2634279A00B8B740 /* Build configuration list for PBXNativeTarget "IndianBiblesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B97401B2634279A00B8B740 /* Debug */,
+				3B97401C2634279A00B8B740 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B973FE22634279700B8B740 /* Project object */;
+}
