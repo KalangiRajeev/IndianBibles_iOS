@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B4522032635E5840047EAF5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4522022635E5840047EAF5 /* SearchViewController.swift */; };
+		3B452205263611760047EAF5 /* UniqueArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B452204263611760047EAF5 /* UniqueArray.swift */; };
+		3B45220726361B850047EAF5 /* UILabelHighlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B45220626361B850047EAF5 /* UILabelHighlight.swift */; };
+		3B84D3762636F9040030D1F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B84D3752636F9030030D1F6 /* Assets.xcassets */; };
+		3B84D3782636F9B00030D1F6 /* indian_bibles.db in Resources */ = {isa = PBXBuildFile; fileRef = 3B84D3772636F9B00030D1F6 /* indian_bibles.db */; };
 		3B973FEE2634279700B8B740 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B973FED2634279700B8B740 /* AppDelegate.swift */; };
 		3B973FF02634279700B8B740 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B973FEF2634279700B8B740 /* SceneDelegate.swift */; };
-		3B973FF22634279700B8B740 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B973FF12634279700B8B740 /* ViewController.swift */; };
+		3B973FF22634279700B8B740 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B973FF12634279700B8B740 /* BooksViewController.swift */; };
 		3B973FF52634279700B8B740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B973FF32634279700B8B740 /* Main.storyboard */; };
-		3B973FF72634279900B8B740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B973FF62634279900B8B740 /* Assets.xcassets */; };
 		3B973FFA2634279900B8B740 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B973FF82634279900B8B740 /* LaunchScreen.storyboard */; };
 		3B9740052634279A00B8B740 /* IndianBiblesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9740042634279A00B8B740 /* IndianBiblesTests.swift */; };
 		3B9740102634279A00B8B740 /* IndianBiblesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97400F2634279A00B8B740 /* IndianBiblesUITests.swift */; };
+		3B97402026343DC300B8B740 /* DBHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97401F26343DC300B8B740 /* DBHandler.swift */; };
+		3B97402226343EC700B8B740 /* Bible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97402126343EC700B8B740 /* Bible.swift */; };
+		3BDB363C26349C1400FFD8F2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDB363B26349C1400FFD8F2 /* CollectionViewCell.swift */; };
+		3BDB363E2634A07100FFD8F2 /* BibleBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDB363D2634A07100FFD8F2 /* BibleBooks.swift */; };
+		3BDB36402634C2B300FFD8F2 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDB363F2634C2B300FFD8F2 /* NavigationViewController.swift */; };
+		3BEF99492635513D006E2F72 /* ChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF99482635513D006E2F72 /* ChaptersViewController.swift */; };
+		3BEF994B263551C3006E2F72 /* VersesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF994A263551C3006E2F72 /* VersesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +46,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B4522022635E5840047EAF5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		3B452204263611760047EAF5 /* UniqueArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueArray.swift; sourceTree = "<group>"; };
+		3B45220626361B850047EAF5 /* UILabelHighlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelHighlight.swift; sourceTree = "<group>"; };
+		3B84D3752636F9030030D1F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B84D3772636F9B00030D1F6 /* indian_bibles.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = indian_bibles.db; sourceTree = "<group>"; };
 		3B973FEA2634279700B8B740 /* IndianBibles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndianBibles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B973FED2634279700B8B740 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B973FEF2634279700B8B740 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3B973FF12634279700B8B740 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B973FF12634279700B8B740 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		3B973FF42634279700B8B740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3B973FF62634279900B8B740 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B973FF92634279900B8B740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B973FFB2634279900B8B740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B9740002634279A00B8B740 /* IndianBiblesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndianBiblesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +64,13 @@
 		3B97400B2634279A00B8B740 /* IndianBiblesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndianBiblesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B97400F2634279A00B8B740 /* IndianBiblesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndianBiblesUITests.swift; sourceTree = "<group>"; };
 		3B9740112634279A00B8B740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B97401F26343DC300B8B740 /* DBHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHandler.swift; sourceTree = "<group>"; };
+		3B97402126343EC700B8B740 /* Bible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible.swift; sourceTree = "<group>"; };
+		3BDB363B26349C1400FFD8F2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		3BDB363D2634A07100FFD8F2 /* BibleBooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleBooks.swift; sourceTree = "<group>"; };
+		3BDB363F2634C2B300FFD8F2 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		3BEF99482635513D006E2F72 /* ChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersViewController.swift; sourceTree = "<group>"; };
+		3BEF994A263551C3006E2F72 /* VersesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +121,13 @@
 		3B973FEC2634279700B8B740 /* IndianBibles */ = {
 			isa = PBXGroup;
 			children = (
+				3BDB363A263496F800FFD8F2 /* Controller */,
+				3BDB3639263496EE00FFD8F2 /* View */,
+				3BDB3638263496A900FFD8F2 /* Model */,
 				3B973FED2634279700B8B740 /* AppDelegate.swift */,
 				3B973FEF2634279700B8B740 /* SceneDelegate.swift */,
-				3B973FF12634279700B8B740 /* ViewController.swift */,
-				3B973FF32634279700B8B740 /* Main.storyboard */,
-				3B973FF62634279900B8B740 /* Assets.xcassets */,
 				3B973FF82634279900B8B740 /* LaunchScreen.storyboard */,
+				3B84D3752636F9030030D1F6 /* Assets.xcassets */,
 				3B973FFB2634279900B8B740 /* Info.plist */,
 			);
 			path = IndianBibles;
@@ -126,6 +149,40 @@
 				3B9740112634279A00B8B740 /* Info.plist */,
 			);
 			path = IndianBiblesUITests;
+			sourceTree = "<group>";
+		};
+		3BDB3638263496A900FFD8F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B84D3772636F9B00030D1F6 /* indian_bibles.db */,
+				3B97402126343EC700B8B740 /* Bible.swift */,
+				3B97401F26343DC300B8B740 /* DBHandler.swift */,
+				3BDB363D2634A07100FFD8F2 /* BibleBooks.swift */,
+				3B452204263611760047EAF5 /* UniqueArray.swift */,
+				3B45220626361B850047EAF5 /* UILabelHighlight.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BDB3639263496EE00FFD8F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B973FF32634279700B8B740 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BDB363A263496F800FFD8F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B973FF12634279700B8B740 /* BooksViewController.swift */,
+				3BEF99482635513D006E2F72 /* ChaptersViewController.swift */,
+				3BEF994A263551C3006E2F72 /* VersesViewController.swift */,
+				3BDB363B26349C1400FFD8F2 /* CollectionViewCell.swift */,
+				3BDB363F2634C2B300FFD8F2 /* NavigationViewController.swift */,
+				3B4522022635E5840047EAF5 /* SearchViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +290,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B973FFA2634279900B8B740 /* LaunchScreen.storyboard in Resources */,
-				3B973FF72634279900B8B740 /* Assets.xcassets in Resources */,
 				3B973FF52634279700B8B740 /* Main.storyboard in Resources */,
+				3B84D3762636F9040030D1F6 /* Assets.xcassets in Resources */,
+				3B84D3782636F9B00030D1F6 /* indian_bibles.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +317,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B973FF22634279700B8B740 /* ViewController.swift in Sources */,
+				3BEF994B263551C3006E2F72 /* VersesViewController.swift in Sources */,
+				3B4522032635E5840047EAF5 /* SearchViewController.swift in Sources */,
+				3B452205263611760047EAF5 /* UniqueArray.swift in Sources */,
+				3BDB36402634C2B300FFD8F2 /* NavigationViewController.swift in Sources */,
+				3B973FF22634279700B8B740 /* BooksViewController.swift in Sources */,
 				3B973FEE2634279700B8B740 /* AppDelegate.swift in Sources */,
+				3B45220726361B850047EAF5 /* UILabelHighlight.swift in Sources */,
+				3BDB363E2634A07100FFD8F2 /* BibleBooks.swift in Sources */,
+				3BDB363C26349C1400FFD8F2 /* CollectionViewCell.swift in Sources */,
+				3B97402026343DC300B8B740 /* DBHandler.swift in Sources */,
 				3B973FF02634279700B8B740 /* SceneDelegate.swift in Sources */,
+				3B97402226343EC700B8B740 /* Bible.swift in Sources */,
+				3BEF99492635513D006E2F72 /* ChaptersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +418,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4YB472XY5U;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -410,6 +479,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4YB472XY5U;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -424,7 +494,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -436,6 +505,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IndianBibles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +523,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IndianBibles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
