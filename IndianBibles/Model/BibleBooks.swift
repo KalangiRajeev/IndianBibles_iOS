@@ -8,8 +8,30 @@
 
 import Foundation
 
+protocol BibleBooksDelegate {
+    func didSelectBibleLanguage (_ bible: String)
+}
+
+
+class BooksSingleton {
+    static let booksSingleton = BooksSingleton ()
+    var selectedBible: String = UserDefaults.standard.string(forKey: "selectedBible") ?? "bible_english"
+    var delegate: BibleBooksDelegate?
+    
+    func selectBible(_ bible: String) {
+        selectedBible = bible
+        UserDefaults.standard.set(bible, forKey: "selectedBible")
+        delegate?.didSelectBibleLanguage(bible)
+    }
+}
+
 struct BibleBooks {
     
+    let biblesInDB: [String] = ["bible_english", "bible_telugu", "bible_tamil", "bible_kannada","bible_malayalam", "bible_hindi"]
+    
+    let bibleLanguages = ["English", "Telugu", "Tamil", "Kannada" , "Malayalam", "Hindi"]
+    
+        
     let englishBooks: [String] = [ "Genesis", "Exodus", "Leviticus", "Numbers", "Deuteronomy", "Joshua",
     "Judges", "Ruth", "1 Samuel", "2 Samuel", "1 Kings", "2 Kings", "1 Chronicles",
     "2 Chronicles", "Ezra", "Nehemiah", "Esther", "Job", "Psalms", "Proverbs", "Ecclesiastes",

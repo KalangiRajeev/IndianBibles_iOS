@@ -8,7 +8,14 @@
 
 import UIKit
 
-class SearchViewController: UITableViewController, UISearchBarDelegate, UISearchResultsUpdating {
+class SearchViewController: UITableViewController, UISearchBarDelegate, UISearchResultsUpdating, BibleBooksDelegate {
+    
+    
+    func didSelectBibleLanguage(_ bible: String) {
+        queriedVerses?.removeAll()
+        tableView.reloadData()
+    }
+    
     
     var sectionVerses : [[Bible]] = [[Bible]]()
     var sectionsIndex : [Int] = [Int]()
@@ -31,13 +38,15 @@ class SearchViewController: UITableViewController, UISearchBarDelegate, UISearch
     }
     
     var queryString : String?
-    let bibleBooks = BibleBooks()
+    var bibleBooks = BibleBooks()
 
     let db = DBHandler()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        BooksSingleton.booksSingleton.delegate = self
         
         if let count = queriedVerses?.count {
             navigationItem.title = "\(count) Search Results"
@@ -56,8 +65,10 @@ class SearchViewController: UITableViewController, UISearchBarDelegate, UISearch
     func updateSearchResults(for searchController: UISearchController) {
         if searchController.searchBar.text != "" {
             if let queryText = searchController.searchBar.text {
+                
                 queryString = queryText
-                queriedVerses = db.getQueriedVerses(search: queryText)
+                queriedVerses = db.getQueriedVerses(selectedBible: BooksSingleton.booksSingleton.selectedBible, search: queryText)
+                
                 if let count = queriedVerses?.count {
                     navigationItem.title = "\(count) Search Results"
                 }
@@ -85,11 +96,13 @@ class SearchViewController: UITableViewController, UISearchBarDelegate, UISearch
         let row = indexPath.row
         let section = indexPath.section
         
-        if let chapter = sectionVerses[section][row].chapter, let verse = sectionVerses[section][row].verse, let verseDesc =  sectionVerses[section][row].verseDesc {
+        
             cell.textLabel?.numberOfLines = 0
+        if let chapter = sectionVerses[section][row].chapter, let verse = sectionVerses[section][row].verse, let verseDesc = sectionVerses[section][row].verseDesc {
             cell.textLabel?.text = "(\(indexPath.row + 1)) \(chapter):\(verse) - \(verseDesc)"
             cell.textLabel?.highlight(text: queryString, color: UIColor.red)
         }
+        
         return cell
     }
     

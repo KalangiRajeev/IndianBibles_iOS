@@ -10,7 +10,12 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class ChaptersViewController: UICollectionViewController, UISearchBarDelegate {
+class ChaptersViewController: UICollectionViewController, UISearchBarDelegate, BibleBooksDelegate {
+    
+    func didSelectBibleLanguage(_ bible: String) {
+        queriedVerses?.removeAll()
+        collectionView.reloadData()
+    }
     
     let inset: CGFloat = 10
     let minimumLineSpacing: CGFloat = 10
@@ -20,7 +25,7 @@ class ChaptersViewController: UICollectionViewController, UISearchBarDelegate {
     var selectedBookIndex : Int?
     let db = DBHandler()
     var chaptersCount: Int?
-    let bibleBooks = BibleBooks()
+    var bibleBooks = BibleBooks()
     var queriedVerses : [Bible]?
     var queryString : String?
 
@@ -28,14 +33,32 @@ class ChaptersViewController: UICollectionViewController, UISearchBarDelegate {
         super.viewDidLoad()
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
+        BooksSingleton.booksSingleton.delegate = self
+        
         if let book = selectedBookIndex {
-            navigationItem.title = bibleBooks.englishBooks[book]
-            chaptersCount = db.getChaptersCount(book: book)
+            switch BooksSingleton.booksSingleton.selectedBible {
+            case "bible_telugu" :
+                navigationItem.title = bibleBooks.teluguBooks[book]
+            case "bible_tamil" :
+                navigationItem.title = bibleBooks.tamilBooks[book]
+            case "bible_hindi" :
+                navigationItem.title = bibleBooks.hindiBooks[book]
+            case "bible_kannada" :
+                navigationItem.title = bibleBooks.kannadaBooks[book]
+            case "bible_malayalam" :
+                navigationItem.title = bibleBooks.malayalamBooks[book]
+            default:
+                navigationItem.title = bibleBooks.englishBooks[book]
+            
+            }
+            chaptersCount = db.getChaptersCount(selectedBible: BooksSingleton.booksSingleton.selectedBible, book: book)
+            
         }
         
         let searchController = UISearchController(searchResultsController: nil)
         searchController.obscuresBackgroundDuringPresentation = false
         navigationItem.searchController = searchController
+        
         let searchBar = searchController.searchBar
         searchBar.delegate = self
         searchBar.placeholder = "Search"
@@ -46,7 +69,7 @@ class ChaptersViewController: UICollectionViewController, UISearchBarDelegate {
         if searchBar.text != "" {
             if let queryText = searchBar.text {
                 queryString = queryText
-                queriedVerses = db.getQueriedVerses(search: queryText)
+                queriedVerses = db.getQueriedVerses(selectedBible: BooksSingleton.booksSingleton.selectedBible, search: queryText)
                 performSegue(withIdentifier: "ChaptersToSearch", sender: self)
             }
         }
@@ -73,8 +96,22 @@ extension ChaptersViewController {
         cell.cellTitle.text = String(indexPath.item + 1)
         
         if let book = selectedBookIndex {
-            let verses = db.getVersesCount(bookNo: book, chapterNo: indexPath.item + 1)
-            cell.cellSubtitle.text =  String(verses) + " Verses"
+            let verses = db.getVersesCount(selectedBible: BooksSingleton.booksSingleton.selectedBible, bookNo: book, chapterNo: indexPath.item + 1)
+            
+            switch BooksSingleton.booksSingleton.selectedBible {
+            case "bible_telugu" :
+                cell.cellSubtitle.text =  String(verses) + " వచనాలు"
+            case "bible_tamil" :
+                cell.cellSubtitle.text =  String(verses) + " வசனங்கள்"
+            case "bible_hindi" :
+                cell.cellSubtitle.text =  String(verses) + " छंद"
+            case "bible_kannada" :
+                cell.cellSubtitle.text =  String(verses) + " ಪದ್ಯಗಳು"
+            case "bible_malayalam" :
+                cell.cellSubtitle.text =  String(verses) + " വാക്യങ്ങൾ"
+            default:
+                cell.cellSubtitle.text =  String(verses) + " Verses"
+            }
         }
         
         cell.layer.cornerRadius = CGFloat(8)

@@ -21,6 +21,12 @@
 		3B9740102634279A00B8B740 /* IndianBiblesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97400F2634279A00B8B740 /* IndianBiblesUITests.swift */; };
 		3B97402026343DC300B8B740 /* DBHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97401F26343DC300B8B740 /* DBHandler.swift */; };
 		3B97402226343EC700B8B740 /* Bible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97402126343EC700B8B740 /* Bible.swift */; };
+		3B97B435263982B300DA3B37 /* LinkVerses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97B434263982B300DA3B37 /* LinkVerses.swift */; };
+		3BB5BEA32639AC5A00FDDCE5 /* LinkedVersesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB5BEA22639AC5A00FDDCE5 /* LinkedVersesManager.swift */; };
+		3BB5BEA52639C1A900FDDCE5 /* cross_references.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BB5BEA42639C1A900FDDCE5 /* cross_references.json */; };
+		3BB5BEA72639D75F00FDDCE5 /* LinkRefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB5BEA62639D75F00FDDCE5 /* LinkRefViewController.swift */; };
+		3BB5D31A263830100084F330 /* ModelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB5D319263830100084F330 /* ModelViewCell.swift */; };
+		3BB5D31C263831DC0084F330 /* ModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB5D31B263831DC0084F330 /* ModelViewController.swift */; };
 		3BDB363C26349C1400FFD8F2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDB363B26349C1400FFD8F2 /* CollectionViewCell.swift */; };
 		3BDB363E2634A07100FFD8F2 /* BibleBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDB363D2634A07100FFD8F2 /* BibleBooks.swift */; };
 		3BDB36402634C2B300FFD8F2 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDB363F2634C2B300FFD8F2 /* NavigationViewController.swift */; };
@@ -66,6 +72,12 @@
 		3B9740112634279A00B8B740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B97401F26343DC300B8B740 /* DBHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHandler.swift; sourceTree = "<group>"; };
 		3B97402126343EC700B8B740 /* Bible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible.swift; sourceTree = "<group>"; };
+		3B97B434263982B300DA3B37 /* LinkVerses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkVerses.swift; sourceTree = "<group>"; };
+		3BB5BEA22639AC5A00FDDCE5 /* LinkedVersesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedVersesManager.swift; sourceTree = "<group>"; };
+		3BB5BEA42639C1A900FDDCE5 /* cross_references.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cross_references.json; sourceTree = "<group>"; };
+		3BB5BEA62639D75F00FDDCE5 /* LinkRefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkRefViewController.swift; sourceTree = "<group>"; };
+		3BB5D319263830100084F330 /* ModelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewCell.swift; sourceTree = "<group>"; };
+		3BB5D31B263831DC0084F330 /* ModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewController.swift; sourceTree = "<group>"; };
 		3BDB363B26349C1400FFD8F2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		3BDB363D2634A07100FFD8F2 /* BibleBooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleBooks.swift; sourceTree = "<group>"; };
 		3BDB363F2634C2B300FFD8F2 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
@@ -155,11 +167,14 @@
 			isa = PBXGroup;
 			children = (
 				3B84D3772636F9B00030D1F6 /* indian_bibles.db */,
+				3BB5BEA42639C1A900FDDCE5 /* cross_references.json */,
 				3B97402126343EC700B8B740 /* Bible.swift */,
 				3B97401F26343DC300B8B740 /* DBHandler.swift */,
 				3BDB363D2634A07100FFD8F2 /* BibleBooks.swift */,
 				3B452204263611760047EAF5 /* UniqueArray.swift */,
 				3B45220626361B850047EAF5 /* UILabelHighlight.swift */,
+				3B97B434263982B300DA3B37 /* LinkVerses.swift */,
+				3BB5BEA22639AC5A00FDDCE5 /* LinkedVersesManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,6 +196,9 @@
 				3BDB363B26349C1400FFD8F2 /* CollectionViewCell.swift */,
 				3BDB363F2634C2B300FFD8F2 /* NavigationViewController.swift */,
 				3B4522022635E5840047EAF5 /* SearchViewController.swift */,
+				3BB5D319263830100084F330 /* ModelViewCell.swift */,
+				3BB5D31B263831DC0084F330 /* ModelViewController.swift */,
+				3BB5BEA62639D75F00FDDCE5 /* LinkRefViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -291,6 +309,7 @@
 			files = (
 				3B973FFA2634279900B8B740 /* LaunchScreen.storyboard in Resources */,
 				3B973FF52634279700B8B740 /* Main.storyboard in Resources */,
+				3BB5BEA52639C1A900FDDCE5 /* cross_references.json in Resources */,
 				3B84D3762636F9040030D1F6 /* Assets.xcassets in Resources */,
 				3B84D3782636F9B00030D1F6 /* indian_bibles.db in Resources */,
 			);
@@ -317,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BB5BEA32639AC5A00FDDCE5 /* LinkedVersesManager.swift in Sources */,
 				3BEF994B263551C3006E2F72 /* VersesViewController.swift in Sources */,
 				3B4522032635E5840047EAF5 /* SearchViewController.swift in Sources */,
 				3B452205263611760047EAF5 /* UniqueArray.swift in Sources */,
@@ -325,10 +345,14 @@
 				3B973FEE2634279700B8B740 /* AppDelegate.swift in Sources */,
 				3B45220726361B850047EAF5 /* UILabelHighlight.swift in Sources */,
 				3BDB363E2634A07100FFD8F2 /* BibleBooks.swift in Sources */,
+				3BB5D31C263831DC0084F330 /* ModelViewController.swift in Sources */,
 				3BDB363C26349C1400FFD8F2 /* CollectionViewCell.swift in Sources */,
 				3B97402026343DC300B8B740 /* DBHandler.swift in Sources */,
+				3BB5BEA72639D75F00FDDCE5 /* LinkRefViewController.swift in Sources */,
 				3B973FF02634279700B8B740 /* SceneDelegate.swift in Sources */,
 				3B97402226343EC700B8B740 /* Bible.swift in Sources */,
+				3B97B435263982B300DA3B37 /* LinkVerses.swift in Sources */,
+				3BB5D31A263830100084F330 /* ModelViewCell.swift in Sources */,
 				3BEF99492635513D006E2F72 /* ChaptersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,37 +1,31 @@
-//
-//  DBHandler.swift
-//  first design
-//
-//  Created by Haris Mir on 23/10/2019.
-//  Copyright © 2019 haris. All rights reserved.
-//
 
 import Foundation
 import SQLite3
 
 class DBHandler {
-    
+     
     let databaseName : String = "indian_bibles"
     let databaseExtension : String = "db"
     var db : OpaquePointer! = nil
+    
     
     init() {
          prepareDatafile()
          db = openDatabase()
     }
     
-    //Copy database for fist time
+    //Copy database for first time
     func prepareDatafile()
     {
         let docUrl=NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
-        print(docUrl)
+//        print(docUrl)
         let fdoc_url=URL(fileURLWithPath: docUrl).appendingPathComponent("\(databaseName).\(databaseExtension)")
         let filemanager=FileManager.default
         
         if !FileManager.default.fileExists(atPath: fdoc_url.path){
             do{
                 let localUrl=Bundle.main.url(forResource: databaseName, withExtension: databaseExtension)
-                print(localUrl?.path ?? "")
+//                print(localUrl?.path ?? "")
                 try filemanager.copyItem(atPath: (localUrl?.path)!, toPath: fdoc_url.path)
                 print("Database copied to simulator-device")
             }catch
@@ -40,7 +34,7 @@ class DBHandler {
             }
         }
         else{
-            print("Database alreayd exists in similator-device")
+            print("Database already exists in similator-device")
         }
     }
     
@@ -49,13 +43,13 @@ class DBHandler {
     func openDatabase() -> OpaquePointer? {
         
         let docUrl=NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
-        print(docUrl)
+//        print(docUrl)
         let fdoc_url=URL(fileURLWithPath: docUrl).appendingPathComponent("\(databaseName).\(databaseExtension)")
         
         var db: OpaquePointer? = nil
         
         if sqlite3_open(fdoc_url.path, &db) == SQLITE_OK {
-            print("DB Connection Opened, Path is :: \(fdoc_url.path)")
+//            print("DB Connection Opened, Path is :: \(fdoc_url.path)")
             return db
         } else {
             print("Unable to open database. Verify that you created the directory described in the Getting Started section.")
@@ -64,7 +58,7 @@ class DBHandler {
         
     }
     
-    func getVerses(selectedBible: String = "bible_english", book:Int, chapter: Int) -> [Bible]?{
+    func getVerses(selectedBible: String = "bible_telugu", book:Int, chapter: Int) -> [Bible]?{
         var bibleVerses = [Bible]()
         let query = "SELECT * FROM \(selectedBible) WHERE Book = \(book) AND Chapter = \(chapter);"
         var queryStatement: OpaquePointer? = nil
@@ -87,7 +81,7 @@ class DBHandler {
         return bibleVerses
     }
     
-    func getQueriedVerses(selectedBible: String = "bible_english", search: String) -> [Bible]? {
+    func getQueriedVerses(selectedBible: String = "bible_telugu", search: String) -> [Bible]? {
         var bibleVerses = [Bible]()
         let query = "SELECT * FROM \(selectedBible) WHERE verse LIKE '%\(search)%';"
         var queryStatement: OpaquePointer? = nil
@@ -110,7 +104,7 @@ class DBHandler {
         return bibleVerses
     }
     
-    func getSelectedVerse(selectedBible: String = "bible_english", book:Int, chapter: Int, verse: Int) -> Bible {
+    func getSelectedVerse(selectedBible: String = "bible_telugu", book:Int, chapter: Int, verse: Int) -> Bible {
         var selectedVerse = Bible()
         let query = "SELECT * FROM \(selectedBible) WHERE Book = \(book) AND Chapter = \(chapter) AND Versecount = \(verse);"
         
@@ -134,7 +128,7 @@ class DBHandler {
         return selectedVerse
     }
         
-    func getChaptersCount(selectedBible: String = "bible_english", book : Int) -> Int {
+    func getChaptersCount(selectedBible: String = "bible_telugu", book : Int) -> Int {
         var chaptersCount = Int()
         let query = "SELECT MAX(Chapter) FROM \(selectedBible) WHERE Book = \(book);"
         var queryStatement: OpaquePointer? = nil
@@ -149,7 +143,7 @@ class DBHandler {
         return chaptersCount
     }
     
-    func getVersesCount(selectedBible: String = "bible_english", bookNo: Int, chapterNo: Int) -> Int {
+    func getVersesCount(selectedBible: String = "bible_telugu", bookNo: Int, chapterNo: Int) -> Int {
         var versesCount = Int()
         let query = "SELECT MAX(Versecount) FROM \(selectedBible) WHERE Book = \(bookNo) AND Chapter = \(chapterNo);"
         var queryStatement: OpaquePointer? = nil
